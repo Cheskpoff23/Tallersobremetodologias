@@ -1,0 +1,184 @@
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Using Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float}
+\usepackage[letterpaper,portrait]{geometry}
+\usepackage{graphicx}
+\usepackage{anysize}
+\usepackage{lipsum}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{csquotes}
+\usepackage[spanish]{babel}
+\usepackage{apacite}
+\usepackage{multicol}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{psfrag}
+\usepackage{pgfplots}
+\usepackage{bm}
+\usepackage{tocloft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Other Settings
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\geometry{letterpaper, margin=2.54cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{ocre}{RGB}{243,102,25}
+\definecolor{mygray}{RGB}{243,243,244}
+\definecolor{deepGreen}{RGB}{26,111,0}
+\definecolor{shallowGreen}{RGB}{235,255,255}
+\definecolor{deepBlue}{RGB}{61,124,222}
+\definecolor{shallowBlue}{RGB}{235,249,255}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define an orangebox command %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\orangebox[1]{\fcolorbox{ocre}{mygray}{\hspace{1em}#1\hspace{1em}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% English Environments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheoremstyle{mytheoremstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
+\newtheoremstyle{myproblemstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
+\theoremstyle{mytheoremstyle}
+\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowGreen,linecolor=deepGreen,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{theorem}{Theorem}[section]
+\theoremstyle{mytheoremstyle}
+\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowBlue,linecolor=deepBlue,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{definition}{Definition}[section]
+\theoremstyle{myproblemstyle}
+\newmdtheoremenv[linecolor=black,leftmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,]{problem}{Problem}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plotting Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepgfplotslibrary{colorbrewer}
+\pgfplotsset{width=8cm,compat=1.9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Gustavo Vergara}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\pgfplotsset{compat=1.18}
+\setstretch{2}
+
+\begin{titlepage}
+    \centering
+    \vspace{2.5cm}
+    {\scshape \Large Taller sobre metodologías de desarrollo de software - GA1-220501093-AA1-EV01 \par}
+    \vspace{5cm}
+    \textbf\large\scshape{\par}
+         \vspace{0.5cm}
+         
+    {\Large Vergara Pareja Gustavo\par}
+    \vspace{5cm}
+    {\scshape\Large Jovanna Herazo\par}
+    \vspace{0.3cm}
+    {\scshape\Large Tecnología en Análisis y Desarrollo de Software \par}
+    \vspace{0.3cm}
+    {\scshape\Large SENA - Centro Agropecuario Regional Cauca\par}
+    \vspace{0.3cm}
+    {\Large \today \par}
+    \end{titlepage}
+
+\begin{flushleft}
+    \large \textbf{EVIDENCIA A SOLUCIONAR}\\
+    \vspace{0.1cm}
+    \section*{Evidencia conocimiento: GA1-220501093-AA1-EV01 taller sobre metodologías de desarrollo de software}
+    Las metodologías de desarrollo son indispensables en los grupos de trabajo y organizaciones relacionadas con la industria de software, partiendo de la información abordada en este componente desarrollar el taller sobre metodologías de desarrollo de software propuesto.
+    
+Elementos para tener en cuenta en el taller:
+\begin{itemize}
+    \item Seleccionar diferentes fuentes de información relacionadas con las metodologías de desarrollo de software.
+    \item Detallar las características que identifican a los marcos de trabajo tradicionales y los marcos de trabajo
+    ágiles.
+    \item Utilizar imágenes de construcción propia o que tengan los derechos respectivos de uso.
+\end{itemize}   
+    \end{flushleft}
+    \newpage
+    %\tableofcontents
+%\section{Ecuación del área total}
+%\begin{figure}[H]
+   % \centering
+    %\includegraphics[width=0.6\textwidth]{CASA3.png}
+    %\caption{Casa de chocolate}
+    %\label{fig:imagen1}
+   % \end{figure}
+
+%\begin{figure}[H]
+    %\centering
+   % \includegraphics[width=0.6\textwidth]{2.png}
+   % \caption{Áreas de la casa}
+   % \label{fig:imagen1}
+   % \end{figure}
+%Sabiendo que b y h y l, son distintos para cada área, entonces la ecuación que representa el área total será:
+%\begin{figure}[H]
+   % \centering
+   % \includegraphics[width=0.6\textwidth]{1.png}
+    
+    %\label{fig:imagen1}
+    %\end{figure}
+\section{FORMULACIÓN DE PREGUNTAS}
+De acuerdo con las temáticas desarrolladas en el componente formativo resolver las siguientes inquietudes.
+\newline 1. Describa con sus propias palabras qué es y de que se compone una metodología de desarrollo de software. Citar por lo menos 2 datos que demuestren su utilidad (35\%).
+\newline 
+Una metodología de desarrollo de software es un conjunto de enfoques, prácticas y procesos estructurados que se utilizan para gestionar y controlar el desarrollo de software. Estas metodologías proporcionan un marco de trabajo para planificar, diseñar, implementar y mantener software de manera eficiente y efectiva.
+\newline
+Dos datos que demuestran la utilidad de una metodología de desarrollo de software son:
+\begin{itemize}
+    \item Mejora la productividad y calidad del software: Una metodología bien definida y seguida adecuadamente puede ayudar a mejorar la productividad del equipo de desarrollo, al proporcionar pautas claras sobre cómo llevar a cabo las diferentes etapas del proceso de desarrollo. Esto también contribuye a la calidad del software final entregado, ya que se pueden aplicar prácticas de control de calidad y pruebas en cada etapa.
+    \item Facilita la gestión y el seguimiento del proyecto: Una metodología de desarrollo de software define roles y responsabilidades claras para los miembros del equipo, y establece hitos y plazos para el progreso del proyecto. Esto facilita la gestión del proyecto, ya que se pueden identificar y abordar problemas potenciales de manera temprana, lo que ayuda a evitar retrasos y desviaciones.
+\end{itemize}
+ 2. Describa con sus propias palabras cuáles son las características fundamentales de un marco de trabajo ágil y un marco de trabajo tradicional (35\%).
+\newline Características de un marco de trabajo ágil y un marco de trabajo tradicional:
+\newline Marco de trabajo ágil: Un marco de trabajo ágil se caracteriza por su enfoque iterativo e incremental en el desarrollo de software. Algunas características fundamentales de un marco ágil son:
+\begin{itemize}
+    \item Flexibilidad y adaptabilidad: Los marcos ágiles se adaptan a los cambios y requisitos emergentes durante el desarrollo del proyecto. Se enfocan en la colaboración y la comunicación continua con los stakeholders para garantizar la satisfacción del cliente.
+    Entrega temprana y frecuente: Los marcos ágiles priorizan la entrega de incrementos de software funcionales de forma temprana y regular. Esto permite obtener retroalimentación rápida y realizar ajustes según sea necesario. 
+    \end{itemize}
+
+Marco de trabajo tradicional: Un marco de trabajo tradicional, a menudo conocido como enfoque de desarrollo en cascada, se caracteriza por un enfoque secuencial y planificado del desarrollo de software. Algunas características fundamentales de un marco de trabajo tradicional son:
+\begin{itemize}
+    \item Planificación y documentación exhaustiva: Los marcos tradicionales enfatizan la planificación y la documentación detallada antes de que comience la implementación del software. Se espera tener una comprensión clara y completa de los requisitos antes de pasar a la siguiente fase.
+    \item Enfoque secuencial: Los marcos tradicionales siguen una secuencia lineal de etapas, como el análisis de requisitos, el diseño, la implementación y las pruebas. Cada etapa se completa antes de pasar a la siguiente.
+\end{itemize}
+3. Elabore una lista donde clasifique por lo menos cinco metodologías de desarrollo de software en marcos tradicionales y marcos ágiles (30\%).
+
+Metodologías en marcos tradicionales:
+\begin{itemize}
+    \item Modelo en cascada (Waterfall)
+    \item Modelo en V (V-Model)
+    \item Modelo en espiral (Spiral Model)
+\end{itemize}
+
+Metodologías en marcos ágiles:
+\begin{itemize}
+    \item Scrum
+    \item Extreme Programming (XP)
+    \item Kanban
+    \item Lean Software Development
+    \item Desarrollo de software adaptativo (Adaptive Software Development)
+\end{itemize}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{132_1584681-W.jpg}
+    \caption{Software development}
+\end{figure}
+
+\section{Referencias}
+Encyclopædia Britannica. (n.d.). Computer programmers discuss software development. [Photograph]. Britannica ImageQuest. Retrieved October 19, 2023, from https://quest-eb-com.bdigital.sena.edu.co/images/132_1584681
+%\bibliographystyle{apacite}
+%\nocite{*}
+%\bibliography{referenciados}
+\end{document}
